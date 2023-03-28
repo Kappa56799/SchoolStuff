@@ -11,10 +11,12 @@ int main() {
     char word1[SIZE], word2[SIZE];
 
     printf("Enter a word: \n");
-    scanf("%s", &word1);
+    fgets(word1,SIZE, stdin);
+    word1[strcspn(word1, "\n")] = '\0';
 
     printf("Enter another word: \n");
-    scanf("%s", &word2);
+    fgets(word2,SIZE, stdin);
+    word2[strcspn(word1, "\n")] = '\0';
 
     CompareWords(word1,word2);
 
@@ -22,7 +24,7 @@ int main() {
     printf("%s\n ", newsentence);
 
     int result = CalculateLength(newsentence); 
-    printf("%d", result);
+    printf("The length is: %d", result);
 }
 
 void CompareWords(char word3[], char word4[]) {
@@ -35,7 +37,8 @@ void CompareWords(char word3[], char word4[]) {
 }
 
 const char *AppendWord(char word1[]) {
-    char *sentence = (char*)calloc(30, sizeof(char));
+    int length = strlen(word1); 
+    char *sentence = (char*)calloc(24 + length , sizeof(char));
     strcat(sentence, "First Word entered is: ");
     strcat(sentence, word1);
 
