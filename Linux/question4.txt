@@ -13,7 +13,7 @@ C)To check the size of a File1.txt we need to do the following:
   
 D)To change the modification time of a file we do the following in linux:
   Ensure we are in the correct directory of the file which we do:
-  cs ~/TUDOP or cd /home/username/TUDOP
+  cd ~/TUDOP or cd /home/username/TUDOP
   
   then we can change the files modification time with:
   touch -t 200411241111 File1.txt
