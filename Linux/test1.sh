@@ -17,7 +17,7 @@ do
   case $input in
     1) echo "These are the current files in your directory:"; ls -a;;
     2) echo "This is the amount of disk space you have left:"; df -H;;
-    3) echo "Your system path is:"; pwd;;
+    3) echo "Your system path is:"; $PATH;;
     4) echo "Your command history is:"; history 5;;
     5) echo "Enter your directory you want to backup in format /your/directory/here: "; read directory; mkdir ~/BackupFolder;cd $directory; cp -r $directory ~/BackupFolder; ls -a ;;
     6) exit 1;;
