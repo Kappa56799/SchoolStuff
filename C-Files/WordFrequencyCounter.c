@@ -14,6 +14,7 @@ int main() {
     return 0;
 }
 
+
 int countWord(char string[], char word[]) {
     int count = 0;
     char *StringSplit;
