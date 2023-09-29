@@ -24,7 +24,7 @@ int main() {
   
   //Same thing as before
   for(int i = 0; i<ROWS; i++) {
-    for(int j=0; j<COLS; j++) {
+    for(int j= 0; j<COLS; j++) {
       printf("%d ", *(*(matrix+i)+j));
     }
   }
