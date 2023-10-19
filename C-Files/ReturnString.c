@@ -5,7 +5,6 @@
 
 //Function prototype
 const char *AppendWord(char word[]);
-
 //Main function
 int main() {
    //User String 
