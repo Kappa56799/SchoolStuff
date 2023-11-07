@@ -1,3 +1,6 @@
+sudo docker exec -it fd053420c07f bash
+mysql -uroot -p
+
 INSERT INTO User (Username, Password, FirstName, LastName) VALUES
     ('user1', 'password1', 'John', 'Doe'),
     ('user2', 'password2', 'Jane', 'Smith'),
