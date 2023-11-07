@@ -1,0 +1,39 @@
+<html>
+<?php
+$cities = array("Tokyo", "Mexico City", "New York City" ,"Mumbai", "Seoul", "Shanghai", "Lagos", "Buenos Aires", "Cairo", "London");
+
+//Part 1
+$count = count($cities);
+$i = 1;
+
+foreach ($cities as $value) {
+  if ($i < $count) {
+    echo "$value, ";
+    $i++;
+  }
+ else {
+   echo "$value";
+ }
+}
+
+//Part 2
+sort($cities);
+echo "<ul>";
+
+foreach ($cities as $value) {
+  echo "<li>$value</li>";
+}
+echo "</ul>";
+
+//Part 3
+array_push($cities, "Los Angeles", "Calcutta", "Osaka", "Beijing");
+sort($cities);
+
+echo "<ul>";
+foreach ($cities as $value) {
+  echo "<li>$value</li>";
+}
+echo "</ul>";
+
+?>
+</html>

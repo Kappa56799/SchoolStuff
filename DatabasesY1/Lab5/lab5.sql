@@ -38,132 +38,201 @@ create table follow (
 );
 
 -- Inserts values into the users table
-insert into users (user_id, username, created) values 
-(1,   'jargontt0',    '2023-07-13'),
-(2,   'czukierman1',  '2023-03-05'),
-(3,   'kbilovsky2',   '2022-10-11'),
-(4,   'dorourke3',    '2023-03-15'),
-(5,   'aclearley4',    null       ),
-(6,   'fmcskin5',     '2022-10-21'),
-(7,   'atabbitt6',    '2022-12-20'),
-(8,   'mtrussler7',   '2023-09-14'),
-(9,   'dtomsu8',      '2023-04-05'),
-(10,  'bbyrde9',       null       ),
-(11,  'lrandalstona', '2023-03-08'),
-(12,  'adellab',      '2023-02-27'),
-(13,  'shendricksc',  '2023-03-06'),
-(14,  'rtocqued',     '2023-02-24'),
-(15,  'drechere',     '2023-04-06'),
-(16,  'lorpen0',      '2023-03-28'),
-(17,  'grimpna',      '2023-08-29'),
-(18,  'khornbuckle2', '2022-11-01'),
-(19,  'pgunnell3',    '2023-05-26'),
-(20,  'nlerwell4',    '2022-11-03'),
-(21,  'mleversha5',   '2023-01-30'),
-(22,  'drimes6',      '2023-06-06'),
-(23,  'cyarnall7',     null       ),
-(24,  'echaters8',    '2023-01-27'),
-(25,  'ecesco9',      '2023-01-29');
+insert into users (user_id, username, created) values (1, 'cwink0', '25-10-2022');
+insert into users (user_id, username, created) values (2, 'dkenneway1', null);
+insert into users (user_id, username, created) values (3, 'jscrivner2', '18-05-2023');
+insert into users (user_id, username, created) values (4, 'adallon3', '16-04-2023');
+insert into users (user_id, username, created) values (5, 'cberrigan4', '13-05-2023');
+insert into users (user_id, username, created) values (6, 'dbrownstein5', '15-11-2022');
+insert into users (user_id, username, created) values (7, 'iamiranda6', null);
+insert into users (user_id, username, created) values (8, 'mdrews7', '17-02-2023');
+insert into users (user_id, username, created) values (9, 'hblockwell8', '02-03-2023');
+insert into users (user_id, username, created) values (10, 'mbermingham9', '05-05-2023');
+insert into users (user_id, username, created) values (11, 'fparrisha', null);
+insert into users (user_id, username, created) values (12, 'vhutchingsb', null);
+insert into users (user_id, username, created) values (13, 'equirkec', '25-11-2022');
+insert into users (user_id, username, created) values (14, 'rmordecaid', '06-04-2023');
+insert into users (user_id, username, created) values (15, 'gdericote', null);
+insert into users (user_id, username, created) values (16, 'hcordayf', '10-03-2023');
+insert into users (user_id, username, created) values (17, 'iandererg', null);
+insert into users (user_id, username, created) values (18, 'cdashh', '22-04-2023');
+insert into users (user_id, username, created) values (19, 'eramardi', null);
+insert into users (user_id, username, created) values (20, 'bjoscelinj', null);
+insert into users (user_id, username, created) values (21, 'etresisek', '18-10-2022');
+insert into users (user_id, username, created) values (22, 'rswepstonel', '15-11-2022');
+insert into users (user_id, username, created) values (23, 'hoglesbeem', '06-04-2023');
+insert into users (user_id, username, created) values (24, 'tschimekn', '29-03-2023');
+insert into users (user_id, username, created) values (25, 'vtantio', null);
+insert into users (user_id, username, created) values (26, 'adarguep', null);
+insert into users (user_id, username, created) values (27, 'mgligorijevicq', null);
+insert into users (user_id, username, created) values (28, 'dmagisterr', '09-01-2023');
+insert into users (user_id, username, created) values (29, 'cdacress', '14-02-2023');
+insert into users (user_id, username, created) values (30, 'lmuatt', '24-10-2022');
 
--- Inserts values into the photos table
-insert into photos (photo_id, url, user_id, created) values 
-(1,  'http://dummyimage.com/10x35.png/dddddd/000000',   1,  '2022-10-27'),
-(2,  'http://dummyimage.com/10x41.png/5fa2dd/ffffff',   2,  '2023-05-22'),
-(3,  'http://dummyimage.com/10x48.png/5fa2dd/ffffff',   3,   null       ),
-(4,  'http://dummyimage.com/10x42.png/5fa2dd/ffffff',   4,  '2023-02-24'),
-(5,  'http://dummyimage.com/10x66.png/5fa2dd/ffffff',   5,  '2022-11-12'),
-(6,  'http://dummyimage.com/10x73.png/cc0000/ffffff',   6,  '2023-04-21'),
-(7,  'http://dummyimage.com/10x20.png/5fa2dd/ffffff',   7,  '2023-09-05'),
-(8,  'http://dummyimage.com/10x31.png/5fa2dd/ffffff',   8,  '2022-12-29'),
-(9,  'http://dummyimage.com/10x24.png/cc0000/ffffff',   9,  '2023-09-02'),
-(10, 'http://dummyimage.com/10x29.png/cc0000/ffffff',   10, '2023-05-16'),
-(11, 'http://dummyimage.com/10x64.png/dddddd/000000',   11, '2023-05-21'),
-(12, 'http://dummyimage.com/10x43.png/dddddd/000000',   12, '2023-07-29'),
-(13, 'http://dummyimage.com/10x67.png/ff4444/ffffff',   13, '2023-02-12'),
-(14, 'http://dummyimage.com/10x38.png/dddddd/000000',   14, '2023-01-08'),
-(15, 'http://dummyimage.com/10x28.png/ff4444/ffffff',   15,  null       ),
-(16, 'http://dummyimage.com/197x100.png/dddddd/000000', 16,  null       ),
-(17, 'http://dummyimage.com/144x100.png/ff4444/ffffff', 17, '2023-05-22'),
-(18, 'http://dummyimage.com/196x100.png/ff4444/ffffff', 18, '2023-06-09'),
-(19, 'http://dummyimage.com/235x100.png/dddddd/000000', 19, '2023-04-15'),
-(20, 'http://dummyimage.com/228x100.png/dddddd/000000', 20, '2022-11-19'),
-(21, 'http://dummyimage.com/143x100.png/5fa2dd/ffffff', 21, '2022-11-09'),
-(22, 'http://dummyimage.com/221x100.png/cc0000/ffffff', 22, '2022-11-02'),
-(23, 'http://dummyimage.com/156x100.png/dddddd/000000', 23,  null       ),
-(24, 'http://dummyimage.com/106x100.png/5fa2dd/ffffff', 24, '2022-11-25'),
-(25, 'http://dummyimage.com/216x100.png/cc0000/ffffff', 25, '2022-10-23');
+
+insert into photos (photo_id, url, user_id, created) values (1, 'http://dummyimage.com/242x100.png/5fa2dd/ffffff', 1, '11-01-2024');
+insert into photos (photo_id, url, user_id, created) values (2, 'http://dummyimage.com/215x100.png/dddddd/000000', 2, '12-02-2024');
+insert into photos (photo_id, url, user_id, created) values (3, null, 3, null);
+insert into photos (photo_id, url, user_id, created) values (4, 'http://dummyimage.com/250x100.png/cc0000/ffffff', 4, '02-12-2023');
+insert into photos (photo_id, url, user_id, created) values (5, 'http://dummyimage.com/202x100.png/cc0000/ffffff', 5, '21-05-2024');
+insert into photos (photo_id, url, user_id, created) values (6, 'http://dummyimage.com/227x100.png/cc0000/ffffff', 6, '11-03-2023');
+insert into photos (photo_id, url, user_id, created) values (7, 'http://dummyimage.com/114x100.png/ff4444/ffffff', 7, '29-01-2024');
+insert into photos (photo_id, url, user_id, created) values (8, 'http://dummyimage.com/206x100.png/cc0000/ffffff', 8, '10-01-2023');
+insert into photos (photo_id, url, user_id, created) values (9, null, 9, null);
+insert into photos (photo_id, url, user_id, created) values (10, 'http://dummyimage.com/162x100.png/ff4444/ffffff', 10, '27-07-2023');
+insert into photos (photo_id, url, user_id, created) values (11, 'http://dummyimage.com/193x100.png/ff4444/ffffff', 11, '20-05-2024');
+insert into photos (photo_id, url, user_id, created) values (12, 'http://dummyimage.com/141x100.png/cc0000/ffffff', 12, '02-01-2023');
+insert into photos (photo_id, url, user_id, created) values (13, 'http://dummyimage.com/129x100.png/dddddd/000000', 13, '12-12-2023');
+insert into photos (photo_id, url, user_id, created) values (14, 'http://dummyimage.com/177x100.png/cc0000/ffffff', 14, '20-04-2023');
+insert into photos (photo_id, url, user_id, created) values (15, 'http://dummyimage.com/128x100.png/dddddd/000000', 15, '21-04-2023');
+insert into photos (photo_id, url, user_id, created) values (16, 'http://dummyimage.com/171x100.png/5fa2dd/ffffff', 16, '12-11-2023');
+insert into photos (photo_id, url, user_id, created) values (17, 'http://dummyimage.com/125x100.png/dddddd/000000', 17, '30-09-2023');
+insert into photos (photo_id, url, user_id, created) values (18, 'http://dummyimage.com/129x100.png/ff4444/ffffff', 18, '05-02-2023');
+insert into photos (photo_id, url, user_id, created) values (19, null, 19, null);
+insert into photos (photo_id, url, user_id, created) values (20, null, 20, null);
+insert into photos (photo_id, url, user_id, created) values (21, null, 21, null);
+insert into photos (photo_id, url, user_id, created) values (22, null, 22, null);
+insert into photos (photo_id, url, user_id, created) values (23, null, 23, null);
+insert into photos (photo_id, url, user_id, created) values (24, 'http://dummyimage.com/179x100.png/ff4444/ffffff', 24, '11-11-2023');
+insert into photos (photo_id, url, user_id, created) values (25, 'http://dummyimage.com/198x100.png/ff4444/ffffff', 25, '23-08-2023');
+insert into photos (photo_id, url, user_id, created) values (26, 'http://dummyimage.com/188x100.png/5fa2dd/ffffff', 26, '22-08-2023');
+insert into photos (photo_id, url, user_id, created) values (27, 'http://dummyimage.com/137x100.png/5fa2dd/ffffff', 27, '14-12-2023');
+insert into photos (photo_id, url, user_id, created) values (28, null, 28, null);
+insert into photos (photo_id, url, user_id, created) values (29, 'http://dummyimage.com/237x100.png/cc0000/ffffff', 29, '02-04-2023');
+insert into photos (photo_id, url, user_id, created) values (30, 'http://dummyimage.com/131x100.png/cc0000/ffffff', 30, '06-06-2023');
 
 -- Inserts values into the likes table
-insert into likes (user_id, photo_id, likedate) values   
-(1,  1,  '2023-01-15'),
-(2,  2,  '2023-04-10'),
-(3,  3,  '2022-11-25'),
-(4,  4,   null       ),
-(5,  5,  '2022-11-23'),
-(6,  6,   null       ),
-(7,  7,  '2023-06-27'),
-(8,  8,  '2023-08-06'),
-(9,  9,  '2023-07-01'),
-(10, 10, '2023-05-09'),
-(11, 11, '2023-08-08'),
-(12, 12, '2022-11-12'),
-(13, 13, '2023-08-23'),
-(14, 14, '2022-12-01'),
-(15, 15, '2023-06-08'),
-(16, 16, '2023-02-21'),
-(17, 17, '2023-06-26'),
-(18, 18, '2023-04-02'),
-(19, 19, '2023-03-04'),
-(20, 20,  null       ),
-(21, 21, '2022-11-17'),
-(22, 22, '2023-01-27'),
-(23, 23, '2023-04-11'),
-(24, 24, '2023-07-19'),
-(25, 25,  null       );
+insert into likes (user_id, photo_id, likedate) values (1, 2, '10/09/2024');
+insert into likes (user_id, photo_id, likedate) values (2, 2, '02/10/2024');
+insert into likes (user_id, photo_id, likedate) values (3, 4, '27/11/2023');
+insert into likes (user_id, photo_id, likedate) values (4, 3, '13/10/2023');
+insert into likes (user_id, photo_id, likedate) values (5, 6, '23/05/2024');
+insert into likes (user_id, photo_id, likedate) values (6, 5, null);
+insert into likes (user_id, photo_id, likedate) values (7, 8, '17/10/2024');
+insert into likes (user_id, photo_id, likedate) values (8, 7, '17/03/2023');
+insert into likes (user_id, photo_id, likedate) values (9, 13, '18/04/2024');
+insert into likes (user_id, photo_id, likedate) values (10, 13, null);
+insert into likes (user_id, photo_id, likedate) values (11, 13, null);
+insert into likes (user_id, photo_id, likedate) values (12, 11, '10/08/2024');
+insert into likes (user_id, photo_id, likedate) values (13, 14, '28/04/2023');
+insert into likes (user_id, photo_id, likedate) values (14, 3, '25/01/2024');
+insert into likes (user_id, photo_id, likedate) values (15, 15, '30/09/2024');
+insert into likes (user_id, photo_id, likedate) values (16, 16, '21/03/2023');
+insert into likes (user_id, photo_id, likedate) values (17, 17, '30/01/2023');
+insert into likes (user_id, photo_id, likedate) values (18, 18, null);
+insert into likes (user_id, photo_id, likedate) values (19, 19, null);
+insert into likes (user_id, photo_id, likedate) values (20, 20, '16/05/2024');
+insert into likes (user_id, photo_id, likedate) values (21, 21, '08/01/2023');
+insert into likes (user_id, photo_id, likedate) values (22, 22, null);
+insert into likes (user_id, photo_id, likedate) values (23, 23, '30/04/2023');
+insert into likes (user_id, photo_id, likedate) values (24, 24, null);
+insert into likes (user_id, photo_id, likedate) values (25, 25, '02/02/2024');
+insert into likes (user_id, photo_id, likedate) values (26, 26, '26/05/2023');
+insert into likes (user_id, photo_id, likedate) values (27, 27, '02/09/2023');
+insert into likes (user_id, photo_id, likedate) values (28, 28, null);
+insert into likes (user_id, photo_id, likedate) values (29, 29, null);
+insert into likes (user_id, photo_id, likedate) values (30, 30, null);
+
 
 -- Inserts values into the follow table
-insert into follow (follower_id, followed_person_id, follow_date) values
-(1,  1,  '2022-10-12'),
-(2,  2,  '2023-03-19'),
-(3,  3,   null       ),
-(4,  4,  '2023-05-16'),
-(5,  5,  '2023-06-16'),
-(6,  6,  '2023-01-29'),
-(7,  7,  '2023-01-22'),
-(8,  8,  '2022-12-06'),
-(9,  9,  '2023-06-23'),
-(10, 10, '2023-04-30'),
-(11, 11, '2023-09-12'),
-(12, 12, '2022-10-16'),
-(13, 13, '2023-01-30'),
-(14, 14,  null       ),
-(15, 15,  null       ),
-(16, 16, '2023-06-24'),
-(17, 17, '2022-12-12'),
-(18, 18,  null       ),
-(19, 19, '2023-02-06'),
-(20, 20, '2022-10-31'),
-(21, 21, '2022-12-17'),
-(22, 22, '2023-04-15'),
-(23, 23, '2023-09-20'),
-(24, 24, '2023-01-25'),
-(25, 25, '2023-08-05');
+insert into follow (follower_id, followed_person_id, follow_date) values (1, 1, '07/02/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (2, 2, '17/03/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (3, 3, '13/01/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (4, 4, '28/10/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (5, 5, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (6, 6, '13/11/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (7, 7, '01/12/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (8, 8, '25/10/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (9, 9, '17/01/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (10, 10, '08/03/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (11, 11, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (12, 12, '27/11/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (13, 13, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (14, 14, '26/02/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (15, 15, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (16, 16, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (17, 17, '13/02/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (18, 18, '05/02/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (19, 19, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (20, 20, '08/01/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (21, 21, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (22, 22, '21/11/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (23, 23, '09/11/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (24, 24, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (25, 25, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (26, 26, null);
+insert into follow (follower_id, followed_person_id, follow_date) values (27, 27, '14/03/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (28, 28, '09/02/2023');
+insert into follow (follower_id, followed_person_id, follow_date) values (29, 29, '28/12/2022');
+insert into follow (follower_id, followed_person_id, follow_date) values (30, 30, null);
 
 
 --Question 1
-SELECT users.username 
+SELECT username
 FROM users 
-WHERE EXISTS (
-    SELECT 1
-    FROM follow
-    WHERE follow.follower_id = users.user_id
-);
+JOIN follow ON users.user_id = follow.followed_person_id
+where follow.follower_id > 0;
 
 --Question 2
-SELECT photos.image_url 
-FROM photos 
-INNER JOIN likes  ON photos.photo_id = likes.photo_id
-WHERE likes.user_id = 1;
+SELECT url
+FROM photos
+JOIN likes ON photos.photo_id = likes.photo_id
+WHERE likes.user_id = 2;
+
+--Question 3
+SELECT username
+FROM users
+JOIN photos ON users.user_id = photos.user_id
+WHERE photos.created IS NULL;
+
+--Question 4
+SELECT username
+FROM users 
+JOIN likes ON users.user_id = likes.user_id
+JOIN photos ON likes.photo_id = photos.photo_id
+WHERE users.user_id = photos.user_id;
+
+-- Question 5
+SELECT username
+FROM users 
+JOIN photos ON users.user_id = photos.user_id
+LEFT JOIN likes ON photos.photo_id = likes.photo_id
+WHERE likes.user_id IS NULL
+  AND photos.created IS NOT NULL;
+
+
+--Question 6
+select distinct username
+FROM users 
+JOIN photos ON users.user_id = photos.user_id
+LEFT JOIN likes ON photos.photo_id = likes.photo_id
+WHERE likes.photo_id IS not NULL AND photos.created is NOT NULL;
+
+--Question 7
+SELECT username
+FROM users
+WHERE CHAR_LENGTH(username) > 10;
+
+--Quetion 8
+SELECT username
+FROM users
+WHERE username LIKE '%n';
+
+--Question 9
+UPDATE users
+SET username = REPLACE(username, 'tschimekn', 'kappa12345')
+WHERE username LIKE '%tschimekn%';
+
+--Test to see if question 9 worked
+--select * from users;
+
+
+
+
+
+
+
+
 
 
 

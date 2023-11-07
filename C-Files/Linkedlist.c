@@ -14,8 +14,6 @@ int main()
 {
     Node *head = NULL; 
     int data;
-    int count;
-    int CheckNum; 
 
     for (int i = 0; i < 3; i++)
     {
