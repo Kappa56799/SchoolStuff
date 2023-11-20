@@ -1,0 +1,46 @@
+CREATE TABLE User (
+    Userid INT NOT NULL AUTO_INCREMENT,
+    Username VARCHAR(50),
+    Password VARCHAR(50),
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    PRIMARY KEY (Userid)
+);
+
+CREATE TABLE Product (
+    ProductId INT NOT NULL AUTO_INCREMENT,
+    Pname VARCHAR(50),
+    Description VARCHAR(50),
+    Price INT(50),
+    Stock INT(50),
+    PRIMARY KEY (ProductID)
+);
+INSERT INTO User (Username, Password, FirstName, LastName) VALUES
+    ('user1', 'password1', 'John', 'Doe'),
+    ('user2', 'password2', 'Jane', 'Smith'),
+    ('user3', 'password3', 'Michael', 'Johnson'),
+    ('user4', 'password4', 'Emily', 'Williams'),
+    ('user5', 'password5', 'David', 'Brown'),
+    ('user6', 'password6', 'Sarah', 'Jones'),
+    ('user7', 'password7', 'Robert', 'Wilson'),
+    ('user8', 'password8', 'Olivia', 'Miller'),
+    ('user9', 'password9', 'James', 'Davis'),
+    ('user10', 'password10', 'Emma', 'Taylor');
+
+
+INSERT INTO Product (Pname, Description, Price, Stock)
+VALUES 
+    ('Product1', 'Description1', 20, 100),
+    ('Product2', 'Description2', 25, 80),
+    ('Product3', 'Description3', 30, 120),
+    ('Product4', 'Description4', 15, 50),
+    ('Product5', 'Description5', 40, 200),
+    ('Product6', 'Description6', 22, 75),
+    ('Product7', 'Description7', 18, 90),
+    ('Product8', 'Description8', 35, 150),
+    ('Product9', 'Description9', 28, 110),
+    ('Product10', 'Description10', 50, 250);
+
+
+GRANT ALL PRIVILEGES ON test_db.* TO 'kappa'@'%';
+

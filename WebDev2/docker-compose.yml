@@ -22,7 +22,6 @@ services:
             MYSQL_PASSWORD: rtyu
         ports:
             - "9906:3306"
-
     phpmyadmin:
       image: phpmyadmin/phpmyadmin
       ports:

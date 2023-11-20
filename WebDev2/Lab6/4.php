@@ -5,7 +5,7 @@
 $host = 'db';
 $user = 'kappa';
 $pass = 'rtyu';
-$dbname = 'Test_DB';
+$dbname = 'LabDb';
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
@@ -37,7 +37,7 @@ echo "<h2>User Table:</h2>";
 if ($resultUser->num_rows > 0) {
     // Output data of each row
     while ($row = $resultUser->fetch_assoc()) {
-        echo "User ID: " . $row["ID"] . " - Username: " . $row["Username"] . " - FirstName: " . $row["FirstName"] . " - LastName: " . $row["LastName"] . "<br>";
+        echo "User ID: " . $row["Userid"] . " - Username: " . $row["Username"] . " - FirstName: " . $row["FirstName"] . " - LastName: " . $row["LastName"] . "<br>";
     }
 } else {
     echo "0 results";
